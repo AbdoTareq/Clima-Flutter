@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 const kTempTextStyle = TextStyle(
@@ -17,4 +18,18 @@ const kButtonTextStyle = TextStyle(
 
 const kConditionTextStyle = TextStyle(
   fontSize: 100.0,
+);
+
+const kTextFieldDecoration = InputDecoration(
+  hintText: 'Enter city name',
+  fillColor: Colors.white,
+  filled: true,
+  hintStyle: TextStyle(color: Colors.grey),
+  icon: Icon(
+    Icons.location_city,
+    color: Colors.white,
+  ),
+  border: OutlineInputBorder(
+      borderSide: BorderSide.none,
+      borderRadius: BorderRadius.all(Radius.circular(10))),
 );
